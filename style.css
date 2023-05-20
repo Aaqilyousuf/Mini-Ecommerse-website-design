@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&family=Ubuntu:wght@500&display=swap');
+
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+/**** Navbar ****/
+
+#navbar{
+    position: sticky;
+    top:0 px;
+    left:0 px;
+    z-index: 100px;
+    padding: .5rem 5rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .5);
+    background: black;
+}
+.navbar .navbar-brand{
+    font-size: 25px;
+    font-weight: 700px;
+    color:#29f700;
+    
+}
+#navbarSupportedContent a{
+    color: #fff;
+    border-bottom: 2px solid transparent;
+}
+
+#navbarSupportedContent a:hover{
+    border-bottom: 2px solid #29f700 ;
+}
+#navbarSupportedContent button{
+    background-color: #29f700;
+    border-radius:15px;
+}
+
+/**** Home ****/
+
+section{
+    width: 100%;
+    min-height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#home{
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4) ), url(bg.jpg);
+    background-size:cover;
+    background-position: center;
+    flex-direction: column;
+
+}
+#home h1{
+    font-size: 100px;
+    color:#fff;
+    letter-spacing: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0px 1px 0px #CCC,
+                 0px 2px 0px #CCC,
+                 0px 3px 0px #CCC,
+                 0px 4px 0px #CCC,
+                 0px 5px 0px #CCC,
+                 0px 6px 0px #CCC,
+                 0px 7px 0px #CCC;
+}
+#home p{
+    font-size: 18px;
+    color: #fff;
+}
+#home .input-group{
+    width:40% ;
+    height:45px ;
+}
+.signin{
+    background-color: #29f700 !important;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, .3)
+}
+
+/** About **/
+
+#About{
+    background-image: linear-gradient(to right, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+} 
+#About h1{
+    color:#fff;
+    font-weight: 700;
+    border-bottom: 5px solid transparent;
+    transition: border;
+}
+#About h1:hover{
+    border-bottom: 5px solid #29f700;
+    transition: border .5s linear;
+
+}
+#About p{
+    color: #fff;
+}
+
+/** Product **/
+
+#product{
+    background: #e5e5e5;
+}
+#product h1{
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+#product img{
+    width: 200px;
+    height: 200px;
+}
+.card{
+    width:250px;
+    height: 300px;
+    margin: 20px 60px;
+    background: #e5e5e5;
+    border:none;
+    box-shadow: 15px 20px 20px rgba(0,0,0,.3),
+                inset 4px 4px 10px white ;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+}
+#product .card:hover{
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,.3),
+             4px 4px 10px white !important;
+    transition: .2s;
+
+}
+
+/** Contact form **/
+
+#contact input{
+    margin:10px 0px;
+}
+#contact textarea{
+    margin:10px 0px;
+}
+.box{
+    width:80% !important;
+    margin-top:10px;
+}
+footer{
+    width:100%;
+    height:30px;
+    background:rgba(0, 0, 0, .8);
+    color: white;
+    margin-top:-30;
+    text-align: center;
+    padding:3px;
+}
